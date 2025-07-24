@@ -3,20 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Descargas</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+  <title>New Beginning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom right, #fceff9, #e0f7fa);
+      color: #3e3e3e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 2rem;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #7c4dff;
+      text-shadow: 2px 2px 4px rgba(124, 77, 255, 0.2);
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #ffffff;
+      background-color: #ff80ab;
+      padding: 0.8rem 1.5rem;
+      border-radius: 12px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+      background-color: #f06292;
+      transform: scale(1.05);
+    }
+
+    .download-section {
+      margin-top: 3rem;
+    }
+
+    .download-section a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #b39ddb;
+      color: white;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    .download-section a:hover {
+      background-color: #9575cd;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>🌸 Archivos para Descargar</h1>
-    <p class="subtext">Haz clic en cualquiera de los botones para obtener tu archivo.</p>
-    
-    <div class="button-group">
-      <a href="downloads/archivo1.pdf" download class="download-button">📄 Guía de autocuidado</a>
-      <a href="downloads/archivo2.pdf" download class="download-button">🧘 Rutina de respiración</a>
-      <a href="downloads/archivo3.pdf" download class="download-button">📓 Diario de emociones</a>
-    </div>
+
+  <h1>New Beginning</h1>
+
+  <p>Hola, soy Paola Andrea. Bienvenida/o a este espacio de conexión, conciencia y cuidado emocional.  
+  Aquí comparto contenido para transformar el dolor en oportunidades de crecimiento. Gracias por estar aquí 🌸</p>
+
+  <div class="social-links">
+    <a href="https://www.youtube.com/@newbeginning" target="_blank">YouTube</a>
+    <a href="https://www.instagram.com/newbeginning" target="_blank">Instagram</a>
   </div>
+
+  <div class="download-section">
+    <h2>Descarga mis recursos aquí:</h2>
+    <a href="downloads/ebook.pdf" download="ebook.pdf">Descargar Ebook</a>
+  </div>
+
 </body>
 </html>

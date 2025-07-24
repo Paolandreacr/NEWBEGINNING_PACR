@@ -1,0 +1,74 @@
+:root {
+  --morado: #a480b4;
+  --rosado: #d586af;
+  --beige: #cebeaf;
+  --cafe: #875e45;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--beige);
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, var(--morado), var(--rosado));
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+main {
+  padding: 2rem 1rem;
+}
+
+h2 {
+  color: var(--cafe);
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: white;
+  border-left: 6px solid var(--morado);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--morado);
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--rosado);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.card a:hover {
+  background-color: var(--morado);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--cafe);
+  color: white;
+}

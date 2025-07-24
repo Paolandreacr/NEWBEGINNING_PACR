@@ -15,18 +15,57 @@
     }
 
     header {
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
       margin-bottom: 3rem;
+      text-align: center;
     }
 
-    header h1 {
+    .profile {
+      flex: 1;
+      max-width: 200px;
+      text-align: center;
+    }
+
+    .profile img {
+      width: 100%;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .profile a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #ce93d8;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .profile a:hover {
+      background-color: #ba68c8;
+    }
+
+    .intro {
+      flex: 2;
+      min-width: 280px;
+    }
+
+    .intro h1 {
       font-size: 3rem;
       font-weight: 700;
       color: #9c27b0;
       text-shadow: 1px 1px 3px rgba(156, 39, 176, 0.2);
     }
 
-    header p {
+    .intro p {
       font-size: 1.2rem;
       max-width: 600px;
       margin: 0 auto;
@@ -116,14 +155,20 @@
 <body>
 
   <header>
-    <h1>New Beginning</h1>
-    <p>Hola, soy Paola Andrea🍃 Bienvenida/o a este espacio de conexión, conciencia y cuidado emocional.  
-    Aquí comparto contenido para transformar el dolor en oportunidades de crecimiento. Gracias por estar aquí.</p>
+    <div class="profile">
+      <img src="paola.png" alt="Foto de Paola Andrea">
+      <a href="https://tu-link-para-citas.com" target="_blank">Agendar Cita</a>
+    </div>
+    <div class="intro">
+      <h1>New Beginning</h1>
+      <p>Hola, soy Paola Andrea🍃 Bienvenida/o a este espacio de conexión, conciencia y cuidado emocional.  
+      Aquí comparto contenido para transformar el dolor en oportunidades de crecimiento. Gracias por estar aquí.</p>
+    </div>
   </header>
 
   <div class="social-links">
     <a href="https://www.youtube.com/@Newbeginning_pacr" target="_blank">YouTube</a>
-    <a href="https://www.instagram.com/newbeginning_pacr?igsh=MWR4N2RnZzB0enplNg%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+    <a href="https://www.instagram.com/newbeginning_pacr" target="_blank">Instagram</a>
   </div>
 
   <h2 class="section-title">📄 HERRAMIENTAS DESCARGABLES</h2>
